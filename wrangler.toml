@@ -5,6 +5,12 @@ name            = 'wheredidigo'
 main            = "worker.js"
 compatibility_date = "2024-09-23"
 
+# Enable Workers Logpush (structured logs + traces forwarded to Cloudflare dashboard)
+# Docs: https://developers.cloudflare.com/workers/observability/logpush/
+[observability]
+enabled = true
+head_sampling_rate = 1   # capture 100% of requests (reduce to e.g. 0.1 for 10%)
+
 # Workers Assets — serve the entire project directory as static files.
 # visited.json and vendor/* are included automatically.
 [assets]
