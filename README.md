@@ -2,7 +2,7 @@
 
 A lightweight, static travel tracker that lets you visualize which Vietnamese provinces and world countries you have visited — rendered as interactive maps with progress stats.
 
-**[Live Demo →](https://travel.hoangviet.io.vn/)** *(replace with your deployed URL)*
+**[Live Demo →](https://travel.hoangviet.io.vn/)**
 
 ![screenshot](docs/screenshot.png)
 
