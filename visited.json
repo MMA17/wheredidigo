@@ -1,0 +1,1138 @@
+{
+  "vietnam": [
+    {
+      "place": "An Giang",
+      "visited": false
+    },
+    {
+      "place": "Bà Rịa - Vũng Tàu",
+      "visited": true
+    },
+    {
+      "place": "Bạc Liêu",
+      "visited": false
+    },
+    {
+      "place": "Bắc Kạn",
+      "visited": false
+    },
+    {
+      "place": "Bắc Giang",
+      "visited": true
+    },
+    {
+      "place": "Bắc Ninh",
+      "visited": true
+    },
+    {
+      "place": "Bến Tre",
+      "visited": true
+    },
+    {
+      "place": "Bình Dương",
+      "visited": false
+    },
+    {
+      "place": "Bình Định",
+      "visited": true
+    },
+    {
+      "place": "Bình Phước",
+      "visited": false
+    },
+    {
+      "place": "Bình Thuận",
+      "visited": true
+    },
+    {
+      "place": "Cà Mau",
+      "visited": false
+    },
+    {
+      "place": "Cao Bằng",
+      "visited": true
+    },
+    {
+      "place": "Cần Thơ",
+      "visited": true
+    },
+    {
+      "place": "Đà Nẵng",
+      "visited": true
+    },
+    {
+      "place": "Đắk Lắk",
+      "visited": false
+    },
+    {
+      "place": "Đắk Nông",
+      "visited": false
+    },
+    {
+      "place": "Đồng Nai",
+      "visited": true
+    },
+    {
+      "place": "Đồng Tháp",
+      "visited": false
+    },
+    {
+      "place": "Điện Biên",
+      "visited": false
+    },
+    {
+      "place": "Gia Lai",
+      "visited": false
+    },
+    {
+      "place": "Hà Giang",
+      "visited": true
+    },
+    {
+      "place": "Hà Nam",
+      "visited": true
+    },
+    {
+      "place": "Hà Nội",
+      "visited": true
+    },
+    {
+      "place": "Hà Tĩnh",
+      "visited": true
+    },
+    {
+      "place": "Hải Dương",
+      "visited": true
+    },
+    {
+      "place": "Hải Phòng",
+      "visited": true
+    },
+    {
+      "place": "Hòa Bình",
+      "visited": true
+    },
+    {
+      "place": "Hậu Giang",
+      "visited": false
+    },
+    {
+      "place": "Hưng Yên",
+      "visited": true
+    },
+    {
+      "place": "TP. Hồ Chí Minh",
+      "visited": true
+    },
+    {
+      "place": "Khánh Hòa",
+      "visited": true
+    },
+    {
+      "place": "Kiên Giang",
+      "visited": true
+    },
+    {
+      "place": "Kon Tum",
+      "visited": false
+    },
+    {
+      "place": "Lai Châu",
+      "visited": true
+    },
+    {
+      "place": "Lào Cai",
+      "visited": true
+    },
+    {
+      "place": "Lạng Sơn",
+      "visited": true
+    },
+    {
+      "place": "Lâm Đồng",
+      "visited": true
+    },
+    {
+      "place": "Long An",
+      "visited": true
+    },
+    {
+      "place": "Nam Định",
+      "visited": true
+    },
+    {
+      "place": "Nghệ An",
+      "visited": true
+    },
+    {
+      "place": "Ninh Bình",
+      "visited": true
+    },
+    {
+      "place": "Ninh Thuận",
+      "visited": true
+    },
+    {
+      "place": "Phú Thọ",
+      "visited": true
+    },
+    {
+      "place": "Phú Yên",
+      "visited": true
+    },
+    {
+      "place": "Quảng Bình",
+      "visited": true
+    },
+    {
+      "place": "Quảng Nam",
+      "visited": true
+    },
+    {
+      "place": "Quảng Ngãi",
+      "visited": true
+    },
+    {
+      "place": "Quảng Ninh",
+      "visited": true
+    },
+    {
+      "place": "Quảng Trị",
+      "visited": true
+    },
+    {
+      "place": "Sóc Trăng",
+      "visited": false
+    },
+    {
+      "place": "Sơn La",
+      "visited": true
+    },
+    {
+      "place": "Tây Ninh",
+      "visited": false
+    },
+    {
+      "place": "Thái Bình",
+      "visited": true
+    },
+    {
+      "place": "Thái Nguyên",
+      "visited": false
+    },
+    {
+      "place": "Thanh Hóa",
+      "visited": true
+    },
+    {
+      "place": "Thừa Thiên - Huế",
+      "visited": true
+    },
+    {
+      "place": "Tiền Giang",
+      "visited": true
+    },
+    {
+      "place": "Trà Vinh",
+      "visited": true
+    },
+    {
+      "place": "Tuyên Quang",
+      "visited": true
+    },
+    {
+      "place": "Vĩnh Long",
+      "visited": true
+    },
+    {
+      "place": "Vĩnh Phúc",
+      "visited": true
+    },
+    {
+      "place": "Yên Bái",
+      "visited": true
+    }
+  ],
+  "world": [
+    {
+      "code": "AF",
+      "place": "Afghanistan",
+      "visited": false
+    },
+    {
+      "code": "AL",
+      "place": "Albania",
+      "visited": false
+    },
+    {
+      "code": "DZ",
+      "place": "Algeria",
+      "visited": false
+    },
+    {
+      "code": "AO",
+      "place": "Angola",
+      "visited": false
+    },
+    {
+      "code": "AR",
+      "place": "Argentina",
+      "visited": false
+    },
+    {
+      "code": "AM",
+      "place": "Armenia",
+      "visited": false
+    },
+    {
+      "code": "AU",
+      "place": "Australia",
+      "visited": false
+    },
+    {
+      "code": "AT",
+      "place": "Austria",
+      "visited": false
+    },
+    {
+      "code": "AZ",
+      "place": "Azerbaijan",
+      "visited": false
+    },
+    {
+      "code": "BS",
+      "place": "Bahamas",
+      "visited": false
+    },
+    {
+      "code": "BD",
+      "place": "Bangladesh",
+      "visited": false
+    },
+    {
+      "code": "BY",
+      "place": "Belarus",
+      "visited": false
+    },
+    {
+      "code": "BE",
+      "place": "Belgium",
+      "visited": false
+    },
+    {
+      "code": "BZ",
+      "place": "Belize",
+      "visited": false
+    },
+    {
+      "code": "BJ",
+      "place": "Benin",
+      "visited": false
+    },
+    {
+      "code": "BT",
+      "place": "Bhutan",
+      "visited": false
+    },
+    {
+      "code": "BO",
+      "place": "Bolivia",
+      "visited": false
+    },
+    {
+      "code": "BA",
+      "place": "Bosnia and Herzegovina",
+      "visited": false
+    },
+    {
+      "code": "BW",
+      "place": "Botswana",
+      "visited": false
+    },
+    {
+      "code": "BR",
+      "place": "Brazil",
+      "visited": false
+    },
+    {
+      "code": "BN",
+      "place": "Brunei",
+      "visited": false
+    },
+    {
+      "code": "BG",
+      "place": "Bulgaria",
+      "visited": false
+    },
+    {
+      "code": "BF",
+      "place": "Burkina Faso",
+      "visited": false
+    },
+    {
+      "code": "BI",
+      "place": "Burundi",
+      "visited": false
+    },
+    {
+      "code": "KH",
+      "place": "Cambodia",
+      "visited": false
+    },
+    {
+      "code": "CM",
+      "place": "Cameroon",
+      "visited": false
+    },
+    {
+      "code": "CA",
+      "place": "Canada",
+      "visited": false
+    },
+    {
+      "code": "CF",
+      "place": "Central African Republic",
+      "visited": false
+    },
+    {
+      "code": "TD",
+      "place": "Chad",
+      "visited": false
+    },
+    {
+      "code": "CL",
+      "place": "Chile",
+      "visited": false
+    },
+    {
+      "code": "CN",
+      "place": "China",
+      "visited": false
+    },
+    {
+      "code": "CO",
+      "place": "Colombia",
+      "visited": false
+    },
+    {
+      "code": "CR",
+      "place": "Costa Rica",
+      "visited": false
+    },
+    {
+      "code": "CI",
+      "place": "Cote d'Ivoire",
+      "visited": false
+    },
+    {
+      "code": "HR",
+      "place": "Croatia",
+      "visited": false
+    },
+    {
+      "code": "CU",
+      "place": "Cuba",
+      "visited": false
+    },
+    {
+      "code": "CY",
+      "place": "Cyprus",
+      "visited": false
+    },
+    {
+      "code": "CZ",
+      "place": "Czech Republic",
+      "visited": false
+    },
+    {
+      "code": "CD",
+      "place": "Democratic Republic of the Congo",
+      "visited": false
+    },
+    {
+      "code": "DK",
+      "place": "Denmark",
+      "visited": false
+    },
+    {
+      "code": "DJ",
+      "place": "Djibouti",
+      "visited": false
+    },
+    {
+      "code": "DO",
+      "place": "Dominican Republic",
+      "visited": false
+    },
+    {
+      "code": "EC",
+      "place": "Ecuador",
+      "visited": false
+    },
+    {
+      "code": "EG",
+      "place": "Egypt",
+      "visited": false
+    },
+    {
+      "code": "SV",
+      "place": "El Salvador",
+      "visited": false
+    },
+    {
+      "code": "GQ",
+      "place": "Equatorial Guinea",
+      "visited": false
+    },
+    {
+      "code": "ER",
+      "place": "Eritrea",
+      "visited": false
+    },
+    {
+      "code": "EE",
+      "place": "Estonia",
+      "visited": false
+    },
+    {
+      "code": "SZ",
+      "place": "Eswatini",
+      "visited": false
+    },
+    {
+      "code": "ET",
+      "place": "Ethiopia",
+      "visited": false
+    },
+    {
+      "code": "FK",
+      "place": "Falkland Islands",
+      "visited": false
+    },
+    {
+      "code": "FJ",
+      "place": "Fiji",
+      "visited": false
+    },
+    {
+      "code": "FI",
+      "place": "Finland",
+      "visited": false
+    },
+    {
+      "code": "FR",
+      "place": "France",
+      "visited": false
+    },
+    {
+      "code": "TF",
+      "place": "French Southern and Antarctic Lands",
+      "visited": false
+    },
+    {
+      "code": "GA",
+      "place": "Gabon",
+      "visited": false
+    },
+    {
+      "code": "GM",
+      "place": "Gambia",
+      "visited": false
+    },
+    {
+      "code": "GE",
+      "place": "Georgia",
+      "visited": false
+    },
+    {
+      "code": "DE",
+      "place": "Germany",
+      "visited": false
+    },
+    {
+      "code": "GH",
+      "place": "Ghana",
+      "visited": false
+    },
+    {
+      "code": "GR",
+      "place": "Greece",
+      "visited": false
+    },
+    {
+      "code": "GL",
+      "place": "Greenland",
+      "visited": false
+    },
+    {
+      "code": "GT",
+      "place": "Guatemala",
+      "visited": false
+    },
+    {
+      "code": "GN",
+      "place": "Guinea",
+      "visited": false
+    },
+    {
+      "code": "GW",
+      "place": "Guinea-Bissau",
+      "visited": false
+    },
+    {
+      "code": "GY",
+      "place": "Guyana",
+      "visited": false
+    },
+    {
+      "code": "HT",
+      "place": "Haiti",
+      "visited": false
+    },
+    {
+      "code": "HN",
+      "place": "Honduras",
+      "visited": false
+    },
+    {
+      "code": "HU",
+      "place": "Hungary",
+      "visited": false
+    },
+    {
+      "code": "IS",
+      "place": "Iceland",
+      "visited": false
+    },
+    {
+      "code": "IN",
+      "place": "India",
+      "visited": false
+    },
+    {
+      "code": "ID",
+      "place": "Indonesia",
+      "visited": false
+    },
+    {
+      "code": "IR",
+      "place": "Iran",
+      "visited": false
+    },
+    {
+      "code": "IQ",
+      "place": "Iraq",
+      "visited": false
+    },
+    {
+      "code": "IE",
+      "place": "Ireland",
+      "visited": false
+    },
+    {
+      "code": "IL",
+      "place": "Israel",
+      "visited": false
+    },
+    {
+      "code": "IT",
+      "place": "Italy",
+      "visited": false
+    },
+    {
+      "code": "JM",
+      "place": "Jamaica",
+      "visited": false
+    },
+    {
+      "code": "JP",
+      "place": "Japan",
+      "visited": false
+    },
+    {
+      "code": "JO",
+      "place": "Jordan",
+      "visited": false
+    },
+    {
+      "code": "KZ",
+      "place": "Kazakhstan",
+      "visited": false
+    },
+    {
+      "code": "KE",
+      "place": "Kenya",
+      "visited": false
+    },
+    {
+      "code": "_1",
+      "place": "Kosovo",
+      "visited": false
+    },
+    {
+      "code": "KW",
+      "place": "Kuwait",
+      "visited": false
+    },
+    {
+      "code": "KG",
+      "place": "Kyrgyzstan",
+      "visited": false
+    },
+    {
+      "code": "LA",
+      "place": "Laos",
+      "visited": false
+    },
+    {
+      "code": "LV",
+      "place": "Latvia",
+      "visited": false
+    },
+    {
+      "code": "LB",
+      "place": "Lebanon",
+      "visited": false
+    },
+    {
+      "code": "LS",
+      "place": "Lesotho",
+      "visited": false
+    },
+    {
+      "code": "LR",
+      "place": "Liberia",
+      "visited": false
+    },
+    {
+      "code": "LY",
+      "place": "Libya",
+      "visited": false
+    },
+    {
+      "code": "LT",
+      "place": "Lithuania",
+      "visited": false
+    },
+    {
+      "code": "LU",
+      "place": "Luxembourg",
+      "visited": false
+    },
+    {
+      "code": "MG",
+      "place": "Madagascar",
+      "visited": false
+    },
+    {
+      "code": "MW",
+      "place": "Malawi",
+      "visited": false
+    },
+    {
+      "code": "MY",
+      "place": "Malaysia",
+      "visited": false
+    },
+    {
+      "code": "ML",
+      "place": "Mali",
+      "visited": false
+    },
+    {
+      "code": "MR",
+      "place": "Mauritania",
+      "visited": false
+    },
+    {
+      "code": "MX",
+      "place": "Mexico",
+      "visited": false
+    },
+    {
+      "code": "MD",
+      "place": "Moldova",
+      "visited": false
+    },
+    {
+      "code": "MN",
+      "place": "Mongolia",
+      "visited": false
+    },
+    {
+      "code": "ME",
+      "place": "Montenegro",
+      "visited": false
+    },
+    {
+      "code": "MA",
+      "place": "Morocco",
+      "visited": false
+    },
+    {
+      "code": "MZ",
+      "place": "Mozambique",
+      "visited": false
+    },
+    {
+      "code": "MM",
+      "place": "Myanmar",
+      "visited": false
+    },
+    {
+      "code": "NA",
+      "place": "Namibia",
+      "visited": false
+    },
+    {
+      "code": "NP",
+      "place": "Nepal",
+      "visited": false
+    },
+    {
+      "code": "NL",
+      "place": "Netherlands",
+      "visited": false
+    },
+    {
+      "code": "NC",
+      "place": "New Caledonia",
+      "visited": false
+    },
+    {
+      "code": "NZ",
+      "place": "New Zealand",
+      "visited": false
+    },
+    {
+      "code": "NI",
+      "place": "Nicaragua",
+      "visited": false
+    },
+    {
+      "code": "NE",
+      "place": "Niger",
+      "visited": false
+    },
+    {
+      "code": "NG",
+      "place": "Nigeria",
+      "visited": false
+    },
+    {
+      "code": "KP",
+      "place": "North Korea",
+      "visited": false
+    },
+    {
+      "code": "MK",
+      "place": "North Macedonia",
+      "visited": false
+    },
+    {
+      "code": "_0",
+      "place": "Northern Cyprus",
+      "visited": false
+    },
+    {
+      "code": "NO",
+      "place": "Norway",
+      "visited": false
+    },
+    {
+      "code": "OM",
+      "place": "Oman",
+      "visited": false
+    },
+    {
+      "code": "PK",
+      "place": "Pakistan",
+      "visited": false
+    },
+    {
+      "code": "PS",
+      "place": "Palestine",
+      "visited": false
+    },
+    {
+      "code": "PA",
+      "place": "Panama",
+      "visited": false
+    },
+    {
+      "code": "PG",
+      "place": "Papua New Guinea",
+      "visited": false
+    },
+    {
+      "code": "PY",
+      "place": "Paraguay",
+      "visited": false
+    },
+    {
+      "code": "PE",
+      "place": "Peru",
+      "visited": false
+    },
+    {
+      "code": "PH",
+      "place": "Philippines",
+      "visited": false
+    },
+    {
+      "code": "PL",
+      "place": "Poland",
+      "visited": false
+    },
+    {
+      "code": "PT",
+      "place": "Portugal",
+      "visited": false
+    },
+    {
+      "code": "PR",
+      "place": "Puerto Rico",
+      "visited": false
+    },
+    {
+      "code": "QA",
+      "place": "Qatar",
+      "visited": false
+    },
+    {
+      "code": "CG",
+      "place": "Republic of the Congo",
+      "visited": false
+    },
+    {
+      "code": "RO",
+      "place": "Romania",
+      "visited": false
+    },
+    {
+      "code": "RU",
+      "place": "Russia",
+      "visited": false
+    },
+    {
+      "code": "RW",
+      "place": "Rwanda",
+      "visited": false
+    },
+    {
+      "code": "SA",
+      "place": "Saudi Arabia",
+      "visited": false
+    },
+    {
+      "code": "SN",
+      "place": "Senegal",
+      "visited": false
+    },
+    {
+      "code": "RS",
+      "place": "Serbia",
+      "visited": false
+    },
+    {
+      "code": "SL",
+      "place": "Sierra Leone",
+      "visited": false
+    },
+    {
+      "code": "SK",
+      "place": "Slovakia",
+      "visited": false
+    },
+    {
+      "code": "SI",
+      "place": "Slovenia",
+      "visited": false
+    },
+    {
+      "code": "SB",
+      "place": "Solomon Islands",
+      "visited": false
+    },
+    {
+      "code": "SO",
+      "place": "Somalia",
+      "visited": false
+    },
+    {
+      "code": "_2",
+      "place": "Somaliland",
+      "visited": false
+    },
+    {
+      "code": "ZA",
+      "place": "South Africa",
+      "visited": false
+    },
+    {
+      "code": "KR",
+      "place": "South Korea",
+      "visited": true
+    },
+    {
+      "code": "SS",
+      "place": "South Sudan",
+      "visited": false
+    },
+    {
+      "code": "ES",
+      "place": "Spain",
+      "visited": false
+    },
+    {
+      "code": "LK",
+      "place": "Sri Lanka",
+      "visited": false
+    },
+    {
+      "code": "SD",
+      "place": "Sudan",
+      "visited": false
+    },
+    {
+      "code": "SR",
+      "place": "Suriname",
+      "visited": false
+    },
+    {
+      "code": "SE",
+      "place": "Sweden",
+      "visited": false
+    },
+    {
+      "code": "CH",
+      "place": "Switzerland",
+      "visited": false
+    },
+    {
+      "code": "SY",
+      "place": "Syria",
+      "visited": false
+    },
+    {
+      "code": "TW",
+      "place": "Taiwan",
+      "visited": false
+    },
+    {
+      "code": "TJ",
+      "place": "Tajikistan",
+      "visited": false
+    },
+    {
+      "code": "TZ",
+      "place": "Tanzania",
+      "visited": false
+    },
+    {
+      "code": "TH",
+      "place": "Thailand",
+      "visited": true
+    },
+    {
+      "code": "TL",
+      "place": "Timor-Leste",
+      "visited": false
+    },
+    {
+      "code": "TG",
+      "place": "Togo",
+      "visited": false
+    },
+    {
+      "code": "TT",
+      "place": "Trinidad and Tobago",
+      "visited": false
+    },
+    {
+      "code": "TN",
+      "place": "Tunisia",
+      "visited": false
+    },
+    {
+      "code": "TR",
+      "place": "Turkey",
+      "visited": false
+    },
+    {
+      "code": "TM",
+      "place": "Turkmenistan",
+      "visited": false
+    },
+    {
+      "code": "UG",
+      "place": "Uganda",
+      "visited": false
+    },
+    {
+      "code": "UA",
+      "place": "Ukraine",
+      "visited": false
+    },
+    {
+      "code": "AE",
+      "place": "United Arab Emirates",
+      "visited": false
+    },
+    {
+      "code": "GB",
+      "place": "United Kingdom",
+      "visited": false
+    },
+    {
+      "code": "US",
+      "place": "United States",
+      "visited": false
+    },
+    {
+      "code": "UY",
+      "place": "Uruguay",
+      "visited": false
+    },
+    {
+      "code": "UZ",
+      "place": "Uzbekistan",
+      "visited": false
+    },
+    {
+      "code": "VU",
+      "place": "Vanuatu",
+      "visited": false
+    },
+    {
+      "code": "VE",
+      "place": "Venezuela",
+      "visited": false
+    },
+    {
+      "code": "VN",
+      "place": "Vietnam",
+      "visited": true
+    },
+    {
+      "code": "EH",
+      "place": "Western Sahara",
+      "visited": false
+    },
+    {
+      "code": "YE",
+      "place": "Yemen",
+      "visited": false
+    },
+    {
+      "code": "ZM",
+      "place": "Zambia",
+      "visited": false
+    },
+    {
+      "code": "ZW",
+      "place": "Zimbabwe",
+      "visited": false
+    }
+  ]
+}

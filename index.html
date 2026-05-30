@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where Did I Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./vendor/jsvectormap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+
+      <header class="hero">
+        <div class="hero-inner">
+          <div class="hero-badge">🗺️ Travel Tracker</div>
+          <h1>Where Did I Go?</h1>
+          <p class="subtitle">Tracking your journey across Vietnam and around the world.</p>
+        </div>
+      </header>
+
+      <main class="main">
+
+        <!-- Tab navigation -->
+        <nav class="tabs" aria-label="Choose map">
+          <button class="tab-btn active" data-tab="vietnam">
+            <span>🇻🇳</span> Vietnam
+            <span class="tab-chip" id="vn-tab-chip">0/63</span>
+          </button>
+          <button class="tab-btn" data-tab="world">
+            <span>🌍</span> World
+            <span class="tab-chip" id="world-tab-chip">0/176</span>
+          </button>
+        </nav>
+
+        <!-- Vietnam panel -->
+        <section class="panel active" data-panel="vietnam">
+          <div class="map-card">
+            <div class="map-card-header">
+              <div>
+                <h2 class="map-title">Vietnam</h2>
+                <p class="map-subtitle">63 provinces &amp; cities</p>
+              </div>
+              <div class="map-kpis">
+                <div class="kpi">
+                  <span class="kpi-value" id="vietnam-percent">0%</span>
+                  <span class="kpi-label">explored</span>
+                </div>
+                <div class="kpi-divider"></div>
+                <div class="kpi">
+                  <span class="kpi-value" id="vietnam-count">0/63</span>
+                  <span class="kpi-label">provinces</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="vietnam-bar"></div>
+            </div>
+            <div id="vietnam-map" class="map-view" role="img" aria-label="Vietnam map with 63 provinces"></div>
+            <p id="vietnam-map-error" class="map-error hidden" role="alert">
+              Could not load the Vietnam map.
+            </p>
+          </div>
+        </section>
+
+        <!-- World panel -->
+        <section class="panel" data-panel="world">
+          <div class="map-card">
+            <div class="map-card-header">
+              <div>
+                <h2 class="map-title">World</h2>
+                <p class="map-subtitle">176 countries</p>
+              </div>
+              <div class="map-kpis">
+                <div class="kpi">
+                  <span class="kpi-value" id="world-percent">0%</span>
+                  <span class="kpi-label">explored</span>
+                </div>
+                <div class="kpi-divider"></div>
+                <div class="kpi">
+                  <span class="kpi-value" id="world-count">0/176</span>
+                  <span class="kpi-label">countries</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="world-bar"></div>
+            </div>
+            <div id="world-map" class="map-view" role="img" aria-label="World map"></div>
+            <p id="world-map-error" class="map-error hidden" role="alert">
+              Could not load the map. Try running <code>python3 -m http.server 8080</code> and open http://localhost:8080
+            </p>
+          </div>
+        </section>
+
+        <!-- Progress charts — always below the active map -->
+        <section class="charts-row" aria-label="Progress charts">
+          <article class="chart-card">
+            <h3 class="chart-title">Vietnam Progress</h3>
+            <div class="donut-wrap">
+              <div class="donut-chart" id="vietnam-donut">
+                <span id="vietnam-donut-label">0%</span>
+              </div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-row">
+                <span class="bar-label"><span class="dot visited-dot"></span>Visited</span>
+                <div class="bar-track"><div id="vietnam-visited-bar" class="bar-fill visited"></div></div>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label"><span class="dot remaining-dot"></span>Remaining</span>
+                <div class="bar-track"><div id="vietnam-left-bar" class="bar-fill remaining"></div></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="chart-card">
+            <h3 class="chart-title">World Progress</h3>
+            <div class="donut-wrap">
+              <div class="donut-chart" id="world-donut">
+                <span id="world-donut-label">0%</span>
+              </div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-row">
+                <span class="bar-label"><span class="dot visited-dot"></span>Visited</span>
+                <div class="bar-track"><div id="world-visited-bar" class="bar-fill visited"></div></div>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label"><span class="dot remaining-dot"></span>Remaining</span>
+                <div class="bar-track"><div id="world-left-bar" class="bar-fill remaining"></div></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Place list -->
+        <section class="list-section">
+          <div class="list-header">
+            <h3 class="list-title">All Places</h3>
+            <span class="list-legend">
+              <span class="dot visited-dot"></span>Visited
+              <span class="dot remaining-dot" style="margin-left:12px"></span>Not visited
+            </span>
+          </div>
+          <ul id="place-list" class="place-list"></ul>
+        </section>
+
+      </main>
+    </div>
+
+    <script src="./vendor/jsvectormap.min.js"></script>
+    <script src="./vendor/world.js"></script>
+    <script src="./vendor/world-countries.js"></script>
+    <script src="./vendor/vietnam.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
