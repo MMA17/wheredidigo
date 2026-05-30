@@ -104,14 +104,14 @@ const refs = {
   worldPercent: document.getElementById("world-percent"),
   worldCount: document.getElementById("world-count"),
   worldBar: document.getElementById("world-bar"),
-  vietnamDonut: document.getElementById("vietnam-donut"),
-  vietnamDonutLabel: document.getElementById("vietnam-donut-label"),
-  vietnamVisitedBar: document.getElementById("vietnam-visited-bar"),
-  vietnamLeftBar: document.getElementById("vietnam-left-bar"),
-  worldDonut: document.getElementById("world-donut"),
-  worldDonutLabel: document.getElementById("world-donut-label"),
-  worldVisitedBar: document.getElementById("world-visited-bar"),
-  worldLeftBar: document.getElementById("world-left-bar"),
+  vietnamDonut: null,
+  vietnamDonutLabel: null,
+  vietnamVisitedBar: null,
+  vietnamLeftBar: null,
+  worldDonut: null,
+  worldDonutLabel: null,
+  worldVisitedBar: null,
+  worldLeftBar: null,
 };
 
 init();
@@ -179,8 +179,6 @@ function renderStats() {
   const vnTotal = vietnamProvinces.length - ISLAND_CODES.size;
   renderTabStats("vietnam", vnTotal, refs.vietnamPercent, refs.vietnamCount, refs.vietnamBar, "provinces");
   renderTabStats("world", worldCountries.length, refs.worldPercent, refs.worldCount, refs.worldBar, "countries");
-  renderGraphStats("vietnam", vnTotal, refs.vietnamDonut, refs.vietnamDonutLabel, refs.vietnamVisitedBar, refs.vietnamLeftBar);
-  renderGraphStats("world", worldCountries.length, refs.worldDonut, refs.worldDonutLabel, refs.worldVisitedBar, refs.worldLeftBar);
   syncMapHighlights();
 }
 
