@@ -1,7 +1,7 @@
 # ── Cloudflare Workers configuration ──────────────────────────
 # Docs: https://developers.cloudflare.com/workers/configuration/
 
-name            = "where-did-i-go"
+name = "wheredidigo"
 main            = "worker.js"
 compatibility_date = "2024-09-23"
 
