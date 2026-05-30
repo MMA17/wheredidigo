@@ -5,6 +5,11 @@ const MAP_STYLE = {
   selectedHover: { fill: "#1f9d57" },
 };
 
+// Island territories that inherit visited status from their parent province:
+// Hoàng Sa (64) → Đà Nẵng (15) | Trường Sa (65) → Khánh Hòa (32)
+const ISLAND_INHERITANCE = { "64": "15", "65": "32" };
+const ISLAND_CODES = new Set(Object.keys(ISLAND_INHERITANCE));
+
 const vietnamProvinces = [
   { code: "1",  name: "An Giang" },
   { code: "2",  name: "Bà Rịa - Vũng Tàu" },
@@ -69,6 +74,8 @@ const vietnamProvinces = [
   { code: "61", name: "Vĩnh Long" },
   { code: "62", name: "Vĩnh Phúc" },
   { code: "63", name: "Yên Bái" },
+  { code: "64", name: "Hoàng Sa" },
+  { code: "65", name: "Trường Sa" },
 ];
 
 const worldCountries = typeof WORLD_COUNTRIES !== "undefined" ? WORLD_COUNTRIES : [];
@@ -116,8 +123,13 @@ async function init() {
       throw new Error(`Failed to load visited.json (${response.status})`);
     }
     const data = await response.json();
+    const vnVisited = new Set(normalizeVisited("vietnam", data.vietnam || []));
+    // Inherit island visibility from parent provinces
+    for (const [island, parent] of Object.entries(ISLAND_INHERITANCE)) {
+      if (vnVisited.has(parent)) vnVisited.add(island);
+    }
     state.visited = {
-      vietnam: new Set(normalizeVisited("vietnam", data.vietnam || [])),
+      vietnam: vnVisited,
       world: new Set(normalizeVisited("world", data.world || [])),
     };
   } catch (error) {
@@ -164,15 +176,18 @@ function render() {
 }
 
 function renderStats() {
-  renderTabStats("vietnam", vietnamProvinces.length, refs.vietnamPercent, refs.vietnamCount, refs.vietnamBar, "provinces");
+  const vnTotal = vietnamProvinces.length - ISLAND_CODES.size;
+  renderTabStats("vietnam", vnTotal, refs.vietnamPercent, refs.vietnamCount, refs.vietnamBar, "provinces");
   renderTabStats("world", worldCountries.length, refs.worldPercent, refs.worldCount, refs.worldBar, "countries");
-  renderGraphStats("vietnam", vietnamProvinces.length, refs.vietnamDonut, refs.vietnamDonutLabel, refs.vietnamVisitedBar, refs.vietnamLeftBar);
+  renderGraphStats("vietnam", vnTotal, refs.vietnamDonut, refs.vietnamDonutLabel, refs.vietnamVisitedBar, refs.vietnamLeftBar);
   renderGraphStats("world", worldCountries.length, refs.worldDonut, refs.worldDonutLabel, refs.worldVisitedBar, refs.worldLeftBar);
   syncMapHighlights();
 }
 
 function renderTabStats(tab, total, percentRef, countRef, barRef, label) {
-  const visitedCount = state.visited[tab].size;
+  const visitedCount = tab === "vietnam"
+    ? [...state.visited.vietnam].filter(c => !ISLAND_CODES.has(c)).length
+    : state.visited[tab].size;
   const percent = total ? (visitedCount / total) * 100 : 0;
 
   percentRef.textContent = `${percent.toFixed(1)}%`;
@@ -185,7 +200,9 @@ function renderTabStats(tab, total, percentRef, countRef, barRef, label) {
 }
 
 function renderGraphStats(tab, total, donutRef, labelRef, visitedBarRef, leftBarRef) {
-  const visitedCount = state.visited[tab].size;
+  const visitedCount = tab === "vietnam"
+    ? [...state.visited.vietnam].filter(c => !ISLAND_CODES.has(c)).length
+    : state.visited[tab].size;
   const visitedPercent = total ? (visitedCount / total) * 100 : 0;
   const leftPercent = Math.max(0, 100 - visitedPercent);
 
@@ -200,7 +217,7 @@ function renderList() {
   const visitedCodes = state.visited[tab];
   const allPlaces = tab === "world"
     ? worldCountries.map((c) => ({ code: c.code, name: c.name }))
-    : vietnamProvinces.map((p) => ({ code: p.code, name: p.name }));
+    : vietnamProvinces.filter((p) => !ISLAND_CODES.has(p.code)).map((p) => ({ code: p.code, name: p.name }));
 
   allPlaces.sort((a, b) => a.name.localeCompare(b.name));
 

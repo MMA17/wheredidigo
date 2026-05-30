@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Where Did I Go</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,12 +17,15 @@
       <header class="hero">
         <div class="hero-inner">
           <div class="hero-badge">🗺️ Travel Tracker</div>
-          <h1>Where Did I Go?</h1>
-          <p class="subtitle">Tracking your journey across Vietnam and around the world.</p>
         </div>
       </header>
 
       <main class="main">
+
+        <div class="app-header">
+          <h1 class="app-title">Where Did I Go?</h1>
+          <!-- <p class="app-sub">Tracking your journey across Vietnam and around the world.</p> -->
+        </div>
 
         <!-- Tab navigation -->
         <nav class="tabs" aria-label="Choose map">
@@ -63,6 +67,24 @@
               Could not load the Vietnam map.
             </p>
           </div>
+          <article class="chart-card">
+            <h3 class="chart-title">Vietnam Progress</h3>
+            <div class="donut-wrap">
+              <div class="donut-chart" id="vietnam-donut">
+                <span id="vietnam-donut-label">0%</span>
+              </div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-row">
+                <span class="bar-label"><span class="dot visited-dot"></span>Visited</span>
+                <div class="bar-track"><div id="vietnam-visited-bar" class="bar-fill visited"></div></div>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label"><span class="dot remaining-dot"></span>Remaining</span>
+                <div class="bar-track"><div id="vietnam-left-bar" class="bar-fill remaining"></div></div>
+              </div>
+            </div>
+          </article>
         </section>
 
         <!-- World panel -->
@@ -93,29 +115,6 @@
               Could not load the map. Try running <code>python3 -m http.server 8080</code> and open http://localhost:8080
             </p>
           </div>
-        </section>
-
-        <!-- Progress charts — always below the active map -->
-        <section class="charts-row" aria-label="Progress charts">
-          <article class="chart-card">
-            <h3 class="chart-title">Vietnam Progress</h3>
-            <div class="donut-wrap">
-              <div class="donut-chart" id="vietnam-donut">
-                <span id="vietnam-donut-label">0%</span>
-              </div>
-            </div>
-            <div class="bar-group">
-              <div class="bar-row">
-                <span class="bar-label"><span class="dot visited-dot"></span>Visited</span>
-                <div class="bar-track"><div id="vietnam-visited-bar" class="bar-fill visited"></div></div>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label"><span class="dot remaining-dot"></span>Remaining</span>
-                <div class="bar-track"><div id="vietnam-left-bar" class="bar-fill remaining"></div></div>
-              </div>
-            </div>
-          </article>
-
           <article class="chart-card">
             <h3 class="chart-title">World Progress</h3>
             <div class="donut-wrap">
@@ -156,5 +155,10 @@
     <script src="./vendor/world-countries.js"></script>
     <script src="./vendor/vietnam.js"></script>
     <script src="./script.js"></script>
+
+    <!-- Floating GitHub button -->
+    <a class="github-fab" href="https://github.com/MMA17/wheredidigo" target="_blank" rel="noopener" aria-label="View source on GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+    </a>
   </body>
 </html>
