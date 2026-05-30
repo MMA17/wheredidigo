@@ -165,9 +165,7 @@ If this project is useful to you, please consider:
 
 ⭐ **[Give it a star on GitHub](https://github.com/MMA17/wheredidigo)** — it helps others discover the project!
 
-☕ **Buy me a coffee** — donate via bank transfer:
-
-[![Donate via bank transfer](docs/donate.jpg)](docs/donate.jpg)
+☕ **Buy me a coffee** — donate via [bank transfer](docs/donate.jpg)
 
 ---
 
